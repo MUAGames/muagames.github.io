@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Pong - Step 2</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-3-screenshot2.png"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal">Goal</h3>
+<p>In this tutorial we are going to take what we created in step 1 and add the
+ball, paddle/wall collisions, and scoring. At the end you’ll have a rough but
+playable version of&nbsp;pong.</p>
+<h3 id="the-ball-class">The Ball&nbsp;Class</h3>
+<p>Like the Paddle class, we are going to create a class to represent the ball. The
+movement code is a lot more complex for the ball, so we are going to handle that
+in the game class, but this object is still going to keep track of its velocity
+as well as include some helpful functions like reset and serve that we can call
+when needed. Reset is pretty obvious - it puts the ball in the middle of the
+table and resuts its velocity to zero. Serve is interesting - we want the ball
+to start in a random direction that is still mostly toward one of the paddles so
+we have a little bit of random code to get a random angle then set the ball’s
+velocity along&nbsp;it.</p>
+<pre><code>class Ball(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A ball sprite. Subclasses the pygame sprite class.&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.image.load(os.path.join(&#39;images&#39;,&#39;pong_ball.gif&#39;))
+        self.rect = self.image.get_rect()
+
+        self.rect.centerx, self.rect.centery = xy
+        self.maxspeed = 10
+        self.servespeed = 5
+        self.velx = 0
+        self.vely = 0
+
+    def reset(self):
+        &quot;&quot;&quot;Put the ball back in the middle and stop it from moving&quot;&quot;&quot;
+        self.rect.centerx, self.rect.centery = 400, 200
+        self.velx = 0
+        self.vely = 0
+
+    def serve(self):
+        angle = random.randint(-45, 45)
+
+        # if close to zero, adjust again
+        if abs(angle) &lt; 5 or abs(angle-180) &lt; 5:
+            angle = random.randint(10,20)
+
+        # pick a side with a random call
+        if random.random() &gt; .5:
+            angle += 180
+
+        # do the trig to get the x and y components
+        x = math.cos(math.radians(angle))
+        y = math.sin(math.radians(angle))
+
+        self.velx = self.servespeed * x
+        self.vely = self.servespeed * y
+</code></pre><h3 id="the-score-class">The Score&nbsp;Class</h3>
+<p>First, let me start by saying there are lots of ways to handle text. I
+personally don’t like dealing with it, so I usually wrap it up in a sprite and
+just stick it in my sprite rendering group and call it done, which is exactly
+what we are going to do here. This is a simple sprite subclass that keeps track
+of our game score and uses the pygame font class to render some text. I’m adding
+the left() and right() functions so we can easily update the score from the game
+class. These will also call re-render, which will recreate the score image and
+re-center it at the specified coordinates so it always looks&nbsp;right.</p>
+<pre><code>class Score(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A sprite for the score.&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        pygame.sprite.Sprite.__init__(self)
+
+        self.xy = xy    # save xy -- will center our rect on it when we change the score
+
+        self.font = pygame.font.Font(None, 50)  # load the default font, size 50
+
+        self.leftscore = 0
+        self.rightscore = 0
+        self.reRender()
+
+    def update(self):
+        pass
+
+    def left(self):
+        &quot;&quot;&quot;Adds a point to the left side score.&quot;&quot;&quot;
+        self.leftscore += 1
+        self.reRender()
+
+    def right(self):
+        &quot;&quot;&quot;Adds a point to the right side score.&quot;&quot;&quot;
+        self.rightscore += 1
+        self.reRender()
+
+    def reset(self):
+        &quot;&quot;&quot;Resets the scores to zero.&quot;&quot;&quot;
+        self.leftscore = 0
+        self.rightscore = 0
+        self.reRender()
+
+    def reRender(self):
+        &quot;&quot;&quot;Updates the score. Renders a new image and re-centers at the initial coordinates.&quot;&quot;&quot;
+        self.image = self.font.render(&quot;%d     %d&quot;%(self.leftscore, self.rightscore), True, (0,0,0))
+        self.rect = self.image.get_rect()
+        self.rect.center = self.xy&lt;/pre&gt;
+</code></pre><h3 id="changes-to-game-__init__">Changes to Game.<strong>init</strong></h3>
+<p>Now that we have the Ball and Score classes, we need to put them into our game.
+Inside the Game.<strong>init</strong> function, add these lines to create the ball, create
+the Score object, and put them in the sprite group for&nbsp;rendering.</p>
+<pre><code># create ball
+self.ball = Ball((400,200))
+self.sprites.add(self.ball)
+
+# score image
+self.scoreImage = Score((400, 50))
+self.sprites.add(self.scoreImage)&lt;/pre&gt;
+</code></pre><h3 id="changes-to-game-run">Changes to&nbsp;Game.run</h3>
+<p>We have a lot to process for the ball movement, but instead of cluttering up the
+main loop, I broke it off into its own function so all we need to do is call
+that function in the main&nbsp;loop.</p>
+<pre><code># handle ball -- all our ball management here
+self.manageBall()&lt;/pre&gt;
+</code></pre><h3 id="changes-to-game-handleevents">Changes to&nbsp;Game.handleEvents</h3>
+<p>The only thing we want to add in the user input is to serve the ball with the
+spacebar when it isn’t moving (ie, has just been reset). We already coded the
+server method into the ball class so all we have to do is call
+self.ball.serve(). Add this inside the keydown&nbsp;block.</p>
+<pre><code># serve with space if the ball isn&#39;t moving
+if event.key == K_SPACE:
+    if self.ball.velx == 0 and self.ball.vely == 0:
+        self.ball.serve()
+</code></pre><h3 id="the-meat-of-the-game-manageball">The meat of the game –&nbsp;manageBall</h3>
+<p>New we need to write the manageBall function we added to our event loop. In this
+we need to do four things: move the ball, bounce it off the walls, bounce it off
+the paddles, and reset it when a point is made. Moving the ball is easy enough,
+it has a velocity - all we have to do is change its position by this.
+Unfortunately, this will send it off the top/bottom of the screen, so we
+want to handle that&nbsp;too.</p>
+<pre><code>def manageBall(self):
+    &quot;&quot;&quot;This basically runs the game. Moves the ball and handles
+    wall and paddle collisions.&quot;&quot;&quot;
+
+    # move the ball according to its velocity
+    self.ball.rect.x += self.ball.velx
+    self.ball.rect.y += self.ball.vely
+
+    # check if ball is off the top
+    if self.ball.rect.top &lt; 0:
+        self.ball.rect.top = 1
+
+        # reverse Y velocity so it &#39;bounces&#39;
+        self.ball.vely *= -1
+
+    # check if ball is off the bottom
+    elif self.ball.rect.bottom &gt; 400:
+        self.ball.rect.bottom = 399
+
+        # reverse Y velocity so it &#39;bounces&#39;
+        self.ball.vely *= -1
+</code></pre><p>Next we are going to test if the ball hits either side, thereby scoring a point
+for the opposite team. If it does, we want to add the point to our score object
+and reset the ball in the middle of the&nbsp;table.</p>
+<pre><code>    # check if the ball hits the left side -- point for right!
+    if self.ball.rect.left &lt; 0:
+        # keep score
+        self.scoreImage.right()
+
+        # reset ball
+        self.ball.reset()
+        return
+
+    # check if the ball hits the right side -- point for left!
+    elif self.ball.rect.right &gt; 800:
+        #keep score
+        self.scoreImage.left()
+
+        # reset ball
+        self.ball.reset()
+        return
+</code></pre><p>Lastly, we need to bounce the ball off the paddles. We are going to use pygames
+collision functions to test if the ball is hitting either of our paddles. If it
+is, we are going to move it outside of the paddle (so it doesn’t collide again
+the next frame and give us a wonky ball-inside-paddle bug) and reverse
+its X velocity, ie bouncing it back the other&nbsp;way.</p>
+<pre><code>    # check for collisions with the paddles using pygames collision functions
+    collided = pygame.sprite.spritecollide(self.ball, [self.leftpaddle, self.rightpaddle], dokill=False)
+
+    # if the ball hit a paddle, it will be in the collided list
+    if len(collided) &gt; 0:
+        hitpaddle = collided[0]
+
+        # reverse the x velocity on the ball
+        self.ball.velx *= -1
+
+        # need to make sure the ball is no longer in the paddle -- going to move it again manually
+        self.ball.rect.x += self.ball.velx&lt;/pre&gt;
+</code></pre><h3 id="result-and-download-">Result and&nbsp;Download:</h3>
+<p>Here is our game with ball, paddles, and&nbsp;score.</p>
+</section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>

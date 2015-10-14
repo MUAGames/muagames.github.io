@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Pong - Step 1</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-3-screenshot.png"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal-">Goal:</h3>
+<p>In this tutorial we will subclass the pygame sprite class to make our paddles
+and ball, then control them using the keyboard. At the end we will have two
+paddles that move and a ball that does absolutely&nbsp;nothing.</p>
+<h3 id="the-setup-">The&nbsp;Setup:</h3>
+<p>First things first. We are going to start with the same code we used in Tutorial
+2, then modify it to work for us. You may want to copy it over, but be aware of
+the changes, particularly the additional imports, the background, the new sprite
+code, and the new rendering code. As usual we begin with the import code, but
+this time we want a couple extra libraries. We won’t need all these for step 1,
+but we are going to import them now so we don’t have to come back to this code
+block later. We will use the os module for our path manipulation when we load
+our images, then math and random for picking a random serving angle for the&nbsp;ball.</p>
+<pre><code>try:
+    import sys, os, math, random
+    import pygame
+    from pygame.locals import *
+
+except ImportError, err:
+    print &quot;%s Failed to Load Module: %s&quot; % (__file__, err)
+    sys.exit(1)
+</code></pre><h3 id="the-sprite-classes-paddle">The Sprite Classes -&nbsp;Paddle</h3>
+<p>This is our first interesting piece of code in these tutorials. In pygame, pretty much everything you see moving around the screen and interacting is a sprite or a subclass of a sprite. This base class provides all the useful behind-the-scenes functionality for rendering, joining and leaving render groups, etc. You can look at the <a href="http://www.pygame.org/docs/ref/sprite.html" title="pygame.sprite docs">pygame.sprite module docs</a> for more info. From our point of view, a sprite has two important attributes: image and rect. Image is a <a href="http://www.pygame.org/docs/ref/surface.html" title="pygame.Surface docs">pygame.Surface</a> object, which is the base class for everything that can get rendered in pygame. Rect is a <a href="http://www.pygame.org/docs/ref/rect.html" title="pygame.Rect docs">pygame.Rect</a>, which represents a rectangle (who knew?) and has a handful of useful functions associated with it as well. Basically when pygame goes to render your sprite, it will take the surface in yoursprite.image and render it in the position and size defined by yoursprite.rect. The first sprite class we are going to make will be our paddle. The paddles are pretty simple – little rectangles that can only move along the Y axis. There are lots of ways we could do this, but we are going to use velocity for the paddles and move them based on that. This means, instead of a keypress moving the paddles directly, it will change the velocity of the paddle. Every frame we will move the paddle based on its velocity, even if it is zero. This gives us two benefits - we can test the velocity of the paddle at any time, which will be very useful later when adding spin to the ball, and we can have the ‘expected’ behavior of the paddle not moving when both the up and down keys are pressed, instead of just giving preference to one of them. Be aware though, the way we are doing this depends on the frame rate, so we will be limiting that later on in our run method. (In a more complicated program you can amend your movement code to scale with the time between frames, so users will varying frame rates will always have a consistent experience.)The other thing we will do is add a move function to the paddles that will automatically keep them inside the screen. This will make moving the paddles extremely easy, and easy is good. You’ll need to download the tutorial zip to get the images or just find/create your own images for the paddles and later on the ball. Place them in a folder below the script named&nbsp;images.</p>
+<pre><code>class Paddle(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A paddle sprite. Subclasses the pygame sprite class.
+    Handles its own position so it will not go off the screen.&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        # initialize the pygame sprite part
+        pygame.sprite.Sprite.__init__(self)
+        # set image and rect
+        self.image = pygame.image.load(os.path.join(&#39;images&#39;,&#39;pong_paddle.gif&#39;))
+        self.rect = self.image.get_rect()
+
+        # set position
+        self.rect.centerx, self.rect.centery = xy
+
+        # the movement speed of our paddle
+        self.movementspeed = 5
+
+        # the current velocity of the paddle -- can only move in Y direction
+        self.velocity = 0
+
+    def up(self):
+        &quot;&quot;&quot;Increases the vertical velocity&quot;&quot;&quot;
+        self.velocity -= self.movementspeed
+
+    def down(self):
+        &quot;&quot;&quot;Decreases the vertical velocity&quot;&quot;&quot;
+        self.velocity += self.movementspeed
+
+    def move(self, dy):
+        &quot;&quot;&quot;Move the paddle in the y direction. Don&#39;t go out the top or bottom&quot;&quot;&quot;
+        if self.rect.bottom + dy &gt; 400:
+            self.rect.bottom = 400
+        elif self.rect.top + dy &lt; 0:
+            self.rect.top = 0
+        else:
+            self.rect.y += dy
+
+    def update(self):
+        &quot;&quot;&quot;Called to update the sprite. Do this every frame. Handles
+        moving the sprite by its velocity&quot;&quot;&quot;
+        self.move(self.velocity)
+</code></pre><h3 id="the-game-class">The Game&nbsp;Class</h3>
+<p>This is our Game class from tutorial 2 with some extras added in for this game. Notably, I changed the window size to 800 x 400, added the <span class="caps">KEYUP</span> event, and all the sprite stuff starting at line 92. The first piece of new code is for the background. I’m creating a pygame surface filling it with white, drawing a black line down the middle, and blitting (drawing) it onto the main window. You may want to have a look at the surface or draw documentation if you don’t understand what is happening. Next, I created a RenderUpdates sprite group. This is a pygame list you add your sprites to that is needed for the kind of ‘dirty update’ rendering we will use in the main loop. Lastly, we create two Paddles, self.leftpaddle and self.rightpaddle, give them their initial coordinates on either side of the screen, and add them to the render&nbsp;group.</p>
+<pre><code>class Game(object):
+    &quot;&quot;&quot;Our game object! This is a fairly simple object that handles the
+    initialization of pygame and sets up our game to run.&quot;&quot;&quot;
+
+    def __init__(self):
+        &quot;&quot;&quot;Called when the the Game object is initialized. Initializes
+        pygame and sets up our pygame window and other pygame tools
+        that we will need for more complicated tutorials.&quot;&quot;&quot;
+
+        # load and set up pygame
+        pygame.init()
+
+        # create our window
+        self.window = pygame.display.set_mode((800, 400))
+
+        # clock for ticking
+        self.clock = pygame.time.Clock()
+
+        # set the window title
+        pygame.display.set_caption(&quot;Pygame Tutorial 3 - Pong&quot;)
+
+        # tell pygame to only pay attention to certain events
+        # we want to know if the user hits the X on the window, and we
+        # want keys so we can close the window with the esc key
+        pygame.event.set_allowed([QUIT, KEYDOWN, KEYUP])
+
+        # make background -- all white, with black line down the middle
+        self.background = pygame.Surface((800,400))
+        self.background.fill((255,255,255))
+        # draw the line vertically down the center
+        pygame.draw.line(self.background, (0,0,0), (400,0), (400,400), 2)
+        self.window.blit(self.background, (0,0))
+        # flip the display so the background is on there
+        pygame.display.flip()
+
+        # a sprite rendering group for our ball and paddles
+        self.sprites = pygame.sprite.RenderUpdates()
+
+        # create our paddles and add to sprite group
+        self.leftpaddle = Paddle((50,200))
+        self.sprites.add(self.leftpaddle)
+        self.rightpaddle = Paddle((750,200))
+        self.sprites.add(self.rightpaddle)
+</code></pre><h3 id="the-event-loop-run-">The Event Loop -&nbsp;Run()</h3>
+<p>This is the same as the run method in tutorial 2, but with our new rendering code put in. First we will run each sprite’s update method, then use the rendergroup to draw them. Notice in lines 134 the sprite group’s draw method returns a list of areas that have changed, which we then pass on to the update method in line 137. This means only those areas will be redrawn, which is far more efficient than re-rendering the entire window if you have a lot going on. It will have almost no effect for us, but it is good practice to start with because when you do a real project you’ll be much better off using it. As mentioned above in the movement discussion, we need a consistent frame rate for the paddles to move correctly, so we are going to cap our frame rate using the pygame clock. The ‘right’ way to do it is to pass the time since the last frame to the update methods and scale the movement from there, but since our game is so simple almost any computer can run this over 60 fps, so capping it there should work for us and keep the tutorial more&nbsp;simple.</p>
+<pre><code>def run(self):
+    &quot;&quot;&quot;Runs the game. Contains the game loop that computes and renders
+    each frame.&quot;&quot;&quot;
+
+    print &#39;Starting Event Loop&#39;
+
+    running = True
+    # run until something tells us to stop
+    while running:
+
+        # tick pygame clock
+        # you can limit the fps by passing the desired frames per seccond to tick()
+        self.clock.tick(60)
+
+        # handle pygame events -- if user closes game, stop running
+        running = self.handleEvents()
+
+        # update the title bar with our frames per second
+        pygame.display.set_caption(&#39;Pygame Tutorial 3 - Pong   %d fps&#39; % self.clock.get_fps())
+
+        # update our sprites
+        for sprite in self.sprites:
+            sprite.update()
+
+        # render our sprites
+        self.sprites.clear(self.window, self.background)    # clears the window where the sprites currently are, using the background
+        dirty = self.sprites.draw(self.window)              # calculates the &#39;dirty&#39; rectangles that need to be redrawn
+
+        # blit the dirty areas of the screen
+        pygame.display.update(dirty)                        # updates just the &#39;dirty&#39; areas
+
+    print &#39;Quitting. Thanks for playing&#39;
+</code></pre><h3 id="handleevents-processing-user-input">HandleEvents - Processing User&nbsp;Input</h3>
+<p>Just like the others, this starts with the tutorial 2 handleEvents method, then we add some additional code. At the top we have the quit code if the user hits the X or presses the escape key. After that, however, is the interesting stuff. We are listening for both keydown and keyup events, and we need to handle the accordingly. We want the paddle to move as long as the user is holding the button, and if they press both the up and down keys at the same time, the paddle to not move at all. In the keydown block, we call the paddles’ up methods for W and the up arrow, and the down methods for S and the down arrow. On keyup, we simple do the opposite to undo the change we made to the velocity. Have a look at the code below, then glance back up at the Paddle class to see how it fits together. If you download the source you can also see a commented out piece of code that does the same thing in a different way (using buffered input&nbsp;instead).</p>
+<pre><code>def handleEvents(self):
+    &quot;&quot;&quot;Poll for PyGame events and behave accordingly. Return false to stop
+    the event loop and end the game.&quot;&quot;&quot;
+
+    # poll for pygame events
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            return False
+
+        # handle user input
+        elif event.type == KEYDOWN:
+            # if the user presses escape, quit the event loop.
+            if event.key == K_ESCAPE:
+                return False
+
+            # paddle control
+            if event.key == K_w:
+                self.leftpaddle.up()
+            if event.key == K_s:
+                self.leftpaddle.down()
+
+            if event.key == K_UP:
+                self.rightpaddle.up()
+            if event.key == K_DOWN:
+                self.rightpaddle.down()
+
+        elif event.type == KEYUP:
+            # paddle control
+            if event.key == K_w:
+                self.leftpaddle.down()
+            if event.key == K_s:
+                self.leftpaddle.up()
+
+            if event.key == K_UP:
+                self.rightpaddle.down()
+            if event.key == K_DOWN:
+                self.rightpaddle.up()
+
+    return True
+</code></pre><h3 id="running-the-script">Running the&nbsp;Script</h3>
+<p>The last thing is the standard tutorial ending that creates the game object and calls run when you actually run the&nbsp;script.</p>
+<pre><code># create a game and run it
+if __name__ == &#39;__main__&#39;:
+    game = Game()
+    game.run()
+</code></pre></section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>

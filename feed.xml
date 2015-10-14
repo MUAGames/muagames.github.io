@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MUA Games</title>
+    <atom:link href="http://localhost:8080/feed.xml" rel="self" type="application/rss+xml"></atom:link>
+    <link>http://localhost:8080</link>
+    <description>MUA Games - Made. Up. Acronym.</description>
+    <pubDate>Tue, 13 Oct 2015 21:59:00 -0700</pubDate>
+    <generator>Wintersmith - https://github.com/jnordberg/wintersmith</generator>
+    <language>en</language>
+    <item>
+      <title>New Site</title>
+      <link>http://localhost:8080/articles/new-site/</link>
+      <pubDate>Tue, 13 Oct 2015 21:59:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/new-site/</guid>
+      <author></author>
+      <description>&lt;p&gt;The site finally has a new look! The old site was great, but after 7 years it
+was getting a little stale and out of date. Now we have a new look, a much
+better stack, and better hosting – basically an upgrade all around.&lt;/p&gt;
+&lt;p&gt;The old tutorials have been copied over (although they are definitely showing
+their age) but most of the extra junk has been removed. For now, this means the
+site will be a little sparse, especially since all the MUA time available in the
+near future is going into games. Don’t fret, though - more tutorials, libraries,
+and games are on the horizon (although with indefinite timelines).&lt;/p&gt;
+&lt;p&gt;For now, enjoy the minimal content, email us if you have anything to ask or say,
+and keep making games!&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Games as Art</title>
+      <link>http://localhost:8080/articles/games-as-art/</link>
+      <pubDate>Wed, 21 Apr 2010 17:00:00 -0700</pubDate>
+      <guid isPermaLink="true">http://localhost:8080/articles/games-as-art/</guid>
+      <author></author>
+      <description>&lt;p&gt;As always, the “Video Games are/aren’t Art” argument is in full swing, with
+Roger Ebert (seriously?) apparently as the newest celebrity to chime in. You can
+read his latest rant on the subject &lt;a href=&quot;http://blogs.suntimes.com/ebert/2010/04/video_games_can_never_be_art.html&quot;&gt;here&lt;/a&gt; if you haven’t already.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;more&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Ebert frames his blathering as a critique of a speech by &lt;a href=&quot;http://www.kelleesantiago.com/thatgamecompany.html&quot;&gt;Kellee
+Santiago&lt;/a&gt; of thatgamecompany in which she apparently says games are art, but
+agrees with Ebert’s original point of “No one in or out of the field has ever
+been able to cite a game worthy of comparison with the great poets, filmmakers,
+novelists, and poets” (apparently he holds the poets in extra high regard,
+worthy of the double mention). His most salient claim is that games are
+inherently separate from art because you can win a game but you can only
+experience art. He doesn’t support this with anything but applies it across
+the board to chess, basketball, maj jong, etc.&lt;/p&gt;
+&lt;p&gt;I disagree with both Ebert and Santiago on almost every point, but everything
+falls back to the definition of art, so let’s begin there.&lt;/p&gt;
+&lt;p&gt;Santiago goes with a Wikipedia definition (edit timestamp unknown):&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Art is the process of deliberately arranging elements in a way that appeals to
+the senses or emotions”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;She also says&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Art is a way of communicating ideas to an audience in a way that the audience
+finds engaging”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ebert takes Plato’s definition of art as the imitation of nature, extends it to
+mean improvement upon nature through the artist’s vision (he prefers art have
+one artist, but concedes to himself that multi-artist pieces can still be art…
+again totally unsupported), then tacks on the “art can’t be anything that can
+be won” part mentioned above.&lt;/p&gt;
+&lt;p&gt;I’m not sure where the definition of art became so convoluted. In my opinion,
+art is something that makes you think or feel. This includes &lt;a href=&quot;http://www.louvre.fr/llv/activite/detail_parcours.jsp?CONTENT%3C%3Ecnt_id=10134198674098115&amp;amp;CURRENT_LLV_PARCOURS%3C%3Ecnt_id=10134198674098115&amp;amp;bmLocale=en&quot;&gt;the masterpieces&lt;/a&gt;,
+&lt;a href=&quot;http://www.google.com/images?q=cave+art&quot;&gt;cave art&lt;/a&gt;, &lt;a href=&quot;http://blogs.suntimes.com/ebert/2010/04/video_games_can_never_be_art.html&quot;&gt;4’33”&lt;/a&gt;, &lt;a href=&quot;http://www.guardian.co.uk/artanddesign/2008/mar/30/art.spain&quot;&gt;a starving dog&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/File:Black_Square.jpg&quot;&gt;black square&lt;/a&gt;, etc, but
+equally includes an &lt;a href=&quot;http://www.youtube.com/watch?v=weEb9S6YyQs&quot;&gt;impassioned speech&lt;/a&gt;, a &lt;a href=&quot;http://www.youtube.com/watch?v=ik8jICj8juc&quot;&gt;choreographed dance&lt;/a&gt;, a raked
+zen rock garden, an exceptional meal, a perfectly executed pass/shot/goal/step
+or a truly inspired play/move. You may not like it — in fact some art is
+created specifically to enrage or offend — but that doesn’t negate its
+existence as art.&lt;/p&gt;
+&lt;p&gt;Staying on topic, video games can be art on many different levels. Games like
+&lt;a href=&quot;http://armorgames.com/play/751/shift&quot;&gt;Shift&lt;/a&gt; turn the idea of a traditional level on its head (get it?). &lt;a href=&quot;http://worldofwarcraft.com&quot;&gt;World
+of Warcraft&lt;/a&gt; can get you so attached to your digital accomplishments that
+you &lt;a href=&quot;http://play.tm/news/6121/child-dies-as-parents-play-mmog-in-korea/&quot;&gt;forget about the real world&lt;/a&gt;. &lt;a href=&quot;http://www.bay12games.com/dwarves/&quot;&gt;Dwarf Fortress&lt;/a&gt; is one of the most
+feature-deep games you’ll ever play juxtaposed with a minimalist interface
+throwback to 1980. &lt;a href=&quot;http://kotaku.com/5350485/canabalt-the-best-one-button-game-youll-play-today&quot;&gt;Canabalt&lt;/a&gt; makes entertainment out of a single button.
+&lt;a href=&quot;http://www.tatsuya-koyama.com/software/wg002_genetos_eng.html&quot;&gt;Genetos&lt;/a&gt; is a shmup meta-commentary on shmups (I expect Ebert would be
+happy as a clam with a movie full of throwbacks to all the old influential
+directors and styles you suffer through in film class, but couldn’t give the
+time of day to Genetos). &lt;a href=&quot;http://www.infinity-universe.com/Infinity&quot;&gt;Infinity&lt;/a&gt; is a game that leverages procedural
+content so thoroughly that you literally have an entire galaxy to play in.
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Portal_(video_game)&quot;&gt;Portal&lt;/a&gt; gets you to care about a box more than yourself;
+&lt;a href=&quot;http://armorgames.com/play/2407/karoshi-suicide-salaryman&quot;&gt;Karoshi Suicide Salaryman&lt;/a&gt; does just the opposite. &lt;a href=&quot;http://towlr.com/&quot;&gt;Towlr&lt;/a&gt; is so
+incredibly simple that it is maddeningly difficult. All of these push some
+boundary or inspire you to think or feel something, despite most of them having
+a clear way to ‘win’.&lt;/p&gt;
+&lt;p&gt;Ebert’s only criticism seems to be the win condition — he even comments about an
+immersive game without points or rules (think &lt;a href=&quot;http://secondlife.com/?v=1.1&quot;&gt;Second Life&lt;/a&gt;), saying “it
+ceases to be a game and becomes a representation of a story, a novel, a play,
+dance, a film. Those are things you cannot win; you can only experience them”.&lt;/p&gt;
+&lt;p&gt;This is the most inspired quote from Ebert’s article, although likely not for
+the reasons he intended. He touches the important part of art that he seems to
+be missing with his tunnel vision: the experience. The art of video games and
+everything else is in the experience. Without context, previously formed
+opinions, feelings, and memories art wouldn’t be able to carry its meaning (or
+&lt;a href=&quot;http://en.wikipedia.org/wiki/Un_Chien_Andalou&quot;&gt;intentional lack of meaning&lt;/a&gt;). Winning, like the end of a movie, isn’t the
+point – it is simply the motivation for the experience. I honestly cannot fathom
+how he critiques movies without this integral piece of understanding.&lt;/p&gt;
+&lt;p&gt;Ebert never makes a solid point, condemning video games as not-art because they
+can be won, because he doesn’t see a reason he would like them, or because, in
+his embarrassingly inexperienced opinion, they don’t compare to the masterworks
+of history. None of these things have anything to do with art — medium, personal
+taste, and quality simply cannot change something from being art. At every turn,
+his criticisms are awkward and uninspired. The acclaim awarded him by a
+passing generation, once a free pass to orate indiscriminately, now appears
+more like the oxygen tank that keeps him alive but means grandpa can’t go on
+the fun rides at the amusement park anymore.&lt;/p&gt;
+&lt;p&gt;Footnote:
+On &lt;a href=&quot;http://thatgamecompany.com/games/flower/&quot;&gt;Flower&lt;/a&gt; Ebert says, ‘Nothing …
+from this game seemed of more than decorative interest on the level of a
+greeting card’. Where the hell is he buying his greeting cards?&lt;/p&gt;
+&lt;p&gt;Article image: &lt;a href=&quot;https://pixabay.com/en/pencils-crayons-colourful-rainbow-452238/&quot;&gt;https://pixabay.com/en/pencils-crayons-colourful-rainbow-452238/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

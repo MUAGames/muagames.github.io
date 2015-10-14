@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Breakout - Step 3</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-4-screenshot3.jpg"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal-">Goal:</h3>
+<p>In step 2 we created a semi-playable version of breakout; we could break the
+blocks but there was only one level and no way to win or lose. Next tutorial we
+will add the rest of the gameplay, but in this one we are going to make a level
+editor so we can create levels very quickly and easily. At the end you should be
+able to crank out new levels in a couple second&nbsp;each.</p>
+<h3 id="the-plan">The&nbsp;Plan</h3>
+<p>To create the level editor we are going to copy over a bunch of code from the
+game and modify it. We want the editor to have exactly the same setup as the
+main board, so we will set up the background the same way. Our goal is to have
+an easy interface to create a bunch of blocks and then export them into a file
+we can easily parse in the next step of the tutorial. I decided we will do this
+by creating a full ‘level’ of Blocks and adjusting the Block class to represent
+both a blank space and an unbreakable block in addition to the 5 block levels we
+already have. Now we just figure out what Block the user clicks on and
+increment/decrement its level accordingly. Then when the user decides to save,
+  we will take our level of Blocks and save off a file containing all their&nbsp;levels.</p>
+<h3 id="the-setup">The&nbsp;Setup</h3>
+<p>The very first thing to do is start a new file. This is a separate program so we
+want it in its own file. At the top of the file put the usual import&nbsp;code.</p>
+<pre><code>try:
+    import sys, os
+    import pygame
+    from pygame.locals import *
+
+except ImportError, err:
+    print &quot;%s Failed to Load Module: %s&quot; % (__file__, err)
+    sys.exit(1)
+</code></pre><h3 id="the-pieces">The&nbsp;Pieces</h3>
+<p>Now we need to copy over some of the pieces we used in the real game. We could
+have imported the classes from the game file and modified them, but the changes
+are pretty severe and I felt like it was more clear to just rewrite everything
+here. The first thing we have is our Block class. It is fairly similar to the
+game one, except we made some changes. We removed the hit function since we
+don’t need it and added up and down functions to adjust the block level. We also
+added the resetImage function which just reloads the correct image for the Block
+when we change its&nbsp;level.</p>
+<pre><code>class Block(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A block sprite. Has a level and a position.&quot;&quot;&quot;
+    def __init__(self, xy, images, level=1):
+        pygame.sprite.Sprite.__init__(self)
+
+        # save images and level
+        self.images = images
+        self.level = level
+
+        # create initial rect
+        self.rect = pygame.Rect(xy[0]-25, xy[1]-10, 50, 20) # left, top, width, height
+
+        # set image and rect so we can be rendered
+        self.resetImage()
+
+    def up(self):
+        self.level += 1
+        self.resetImage()
+
+    def down(self):
+        self.level -= 1
+        self.resetImage()
+
+    def resetImage(self):
+        if self.level in self.images:
+            self.image = self.images[self.level]
+            xy = self.rect.center               # save previous position
+            self.rect = self.image.get_rect()   # reset rect in case shape changes
+            self.rect.center = xy               # reset block to old position
+</code></pre><h3 id="blockfactory">BlockFactory</h3>
+<p>Next we copy over the BlockFactory. This is nearly the same except we remove the getSolidBlock function and add the gray block image to the regular image list we pass to new Blocks. That way we don’t have to do anything different when we want to create a solid block - it is just another level as far as our Block class is&nbsp;concerned.</p>
+<pre><code>class BlockFactory(object):
+    &quot;&quot;&quot;Using this class to return blocks with a copy of the images
+        already loaded. No sense in re-loaded all the images for
+        every block every time one is created.&quot;&quot;&quot;
+
+    def __init__(self):
+        # load all our block images
+        self.images = {
+            1: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_blue.png&#39;)),
+            2: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_green.png&#39;)),
+            3: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_red.png&#39;)),
+            4: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_orange.png&#39;)),
+            5: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_purple.png&#39;)),
+            6: pygame.image.load(os.path.join(&#39;images&#39;,&#39;block_gray.png&#39;))
+        }
+
+    def getBlock(self, xy, level=1):
+        return Block(xy, self.images, level)
+</code></pre><h3 id="button-sprite">Button&nbsp;Sprite</h3>
+<p>Since the rest of the editor is all mouse clicks, I wanted a button the user
+could click to save the level instead of having to go to the keyboard and
+hitting ctrl-s, so here is an extremely simple button class. It is just a sprite
+that uses the font class to generate an image and uses that for rendering. It
+isn’t pretty, but we could easily make it a little nicer looking if we wanted to
+with a little draw code instead of just filling the&nbsp;background.</p>
+<pre><code>class Button(pygame.sprite.Sprite):
+    &quot;&quot;&quot;An extremely simple button sprite.&quot;&quot;&quot;
+    def __init__(self, xy, text):
+        pygame.sprite.Sprite.__init__(self)
+        self.xy = xy
+        self.font = pygame.font.Font(None, 25)  # load the default font, size 25
+        self.color = (0, 0, 0)         # our font color in rgb
+        self.text = text
+        self.generateImage() # generate the image
+
+    def generateImage(self):
+        # draw text with a solid background - about as simple as we can get
+        self.image = self.font.render(self.text, True, self.color, (200,200,200))
+        self.rect = self.image.get_rect()
+        self.rect.center = self.xy
+</code></pre><h3 id="text-sprite">Text&nbsp;Sprite</h3>
+<p>This one is very very similar to the button sprite above, but for clarity I
+decided they could be two different classes. This one stores and renders some
+text the same way, but has another method for changing the text. I also
+hardcoded the colors into these classes because I’m lazy – If you wanted to
+merge them you would just need to make some options for setting the font color
+and filling the&nbsp;background.</p>
+<pre><code>class TextSprite(pygame.sprite.Sprite):
+    &quot;&quot;&quot;An extremely simple text sprite.&quot;&quot;&quot;
+
+    def __init__(self, xy, text=&#39;&#39;):
+        pygame.sprite.Sprite.__init__(self)
+        self.xy = xy    # save xy -- will center our rect on it when we change the text
+        self.font = pygame.font.Font(None, 25)  # load the default font, size 25
+        self.color = (255, 165, 0)         # our font color in rgb
+        self.text = text
+        self.generateImage() # generate the image
+
+    def setText(self, text):
+        self.text = text
+        self.generateImage()
+
+    def generateImage(self):
+        &quot;&quot;&quot;Updates the text. Renders a new image and re-centers at the initial coordinates.&quot;&quot;&quot;
+        self.image = self.font.render(self.text, True, self.color)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.xy
+</code></pre><h3 id="levelbuilder">LevelBuilder</h3>
+<p>Next we have our LevelBuilder class. This is the same as the Game class in the
+previous tutorials, and you’ll see that their <strong>init</strong> and run methods are very
+similar. Things to notice in the <strong>init</strong> – we are now also listening for mouse
+click events, we create our save button and feedback text sprites, and we have a
+function resetLevel that we call to get it set up and ready for the&nbsp;user.</p>
+<pre><code>class LevelBuilder(object):
+    &quot;&quot;&quot;Our level builder object! Initializes everything.&quot;&quot;&quot;
+
+    def __init__(self):
+        &quot;&quot;&quot;Initializes pygame and sets up our pygame window
+        and other pygame tools.&quot;&quot;&quot;
+
+        # load and set up pygame
+        pygame.init()
+
+        # create our window
+        self.window = pygame.display.set_mode((520, 600))
+
+        # clock for ticking
+        self.clock = pygame.time.Clock()
+
+        # set the window title
+        pygame.display.set_caption(&quot;Pygame Tutorial 4 - Breakout&quot;)
+
+        # tell pygame to only pay attention to certain events
+        # we want to know if the user hits the X on the window, and we
+        # want keys so we can close the window with the esc key
+        pygame.event.set_allowed([QUIT, KEYDOWN, KEYUP, MOUSEBUTTONDOWN])
+
+        # make background
+        self.background = pygame.image.load(os.path.join(&#39;images&#39;,&#39;background.jpg&#39;))
+        # blit the background onto the window
+        self.window.blit(self.background, (0,0))
+        # flip the display so the background is on there
+        pygame.display.flip()
+
+        # create sprite group for blocks
+        self.blocks = pygame.sprite.RenderUpdates()
+
+        # create sprite group for everything else
+        self.sprites = pygame.sprite.RenderUpdates()
+
+        # create our blockfactory object
+        self.blockfactory = BlockFactory()
+
+        # create a blank level
+        self.resetLevel()
+
+        # Save button sprite
+        self.savebutton = Button((260,450), &#39;Save&#39;)
+        self.sprites.add(self.savebutton)
+
+        # feedback sprite
+        self.feedback = TextSprite((260, 550),  &#39;&#39;)
+        self.sprites.add(self.feedback)
+</code></pre><h3 id="levelbuilder-run">LevelBuilder.run</h3>
+<p>The run method is almost exactly the same except each frame we also call
+self.drawGrid which draws grid lines to show where the user can click. I put
+this method after we draw the blocks, which makes the lines overlap them a bit,
+but doing it before the clear was causing some flickering I didn’t like.
+Try both ways and see what I&nbsp;mean.</p>
+<pre><code>def run(self):
+    &quot;&quot;&quot;Runs the game. Contains the game loop that computes and renders
+    each frame.&quot;&quot;&quot;
+
+    print &#39;Starting Event Loop&#39;
+
+    running = True
+    # run until something tells us to stop
+    while running:
+
+        # tick pygame clock
+        # you can limit the fps by passing the desired frames per seccond to tick()
+        self.clock.tick(60)
+
+        # handle pygame events -- if user closes game, stop running
+        running = self.handleEvents()
+
+        # update the title bar with our frames per second
+        pygame.display.set_caption(&#39;Pygame Tutorial 4 - Breakout   %d fps&#39; % self.clock.get_fps())
+
+        # render blocks
+        self.blocks.clear(self.window, self.background)
+        dirty = self.blocks.draw(self.window)
+
+        # render everything else
+        self.sprites.clear(self.window, self.background)
+        dirty += self.sprites.draw(self.window)
+
+        # draw a grid on our background
+        self.drawGrid()
+
+        # blit the dirty areas of the screen
+        pygame.display.update(dirty)                        # updates just the &#39;dirty&#39; areas
+
+    print &#39;Quitting. Thanks for playing&#39;
+</code></pre><h3 id="levelbuilder-resetlevel">LevelBuilder.resetLevel</h3>
+<p>Here is the resetLevel method we called in the <strong>init</strong>. The first line empties
+our block render group so we don’t leave any Blocks in there rendering when they
+were supposed to be removed. The rest creates an empty 2D array then fills it
+with Blocks of level&nbsp;0.</p>
+<pre><code>def resetLevel(self):
+    # empty our sprite group
+    self.blocks.empty()
+
+    # create our level object -- 2D array of blocks with level 0
+    self.level = []
+    for y in range(5):
+        row = []
+        for x in range(10):
+            pos = (35+(x*50), 20+(y*20))    # calculate the position for the block
+            block = self.blockfactory.getBlock(pos, 0)  # create the block
+            row.append(block)               # add the block to the row
+        self.level.append(row)              # add the row to the array
+</code></pre><h3 id="levelbuilder-drawgrid">LevelBuilder.drawGrid</h3>
+<p>Next is the drawGrid class we call each frame to, you guessed it, draw the grid.
+It uses the pygame.draw functions to put white lines around all the places we
+can put a block. Looking back now, I think a better way to write this would have
+been to just create another block image that was just an outline and pass that
+to new Blocks as their level 0 image. Oh well - take this as an example of how
+there are lots of ways to solve the same&nbsp;problem.</p>
+<pre><code>def drawGrid(self):
+    # draw lines on the background where blocks can go
+    linecolor = (255,255,255)
+    for col in range(11):   # 11 so we get both sides of all the columns
+        # surface, color, start, end
+        pygame.draw.line(self.window, linecolor, (10+(col*50),10), ((10+col*50),110))
+
+        for row in range(6):    # 6 so we get both sides of all the rows
+            pygame.draw.line(self.window, linecolor, (10, 10+(row*20)), (510, 10+(row*20)))
+    # render the display
+    pygame.display.flip()
+</code></pre><h3 id="levelbuilder-handleevents">LevelBuilder.handleEvents</h3>
+<p>This one is pretty similar to the game handleEvents method. We check if the user
+presses escape to end or control-s to save and we send any mouse clicks to the
+mouseDown method for&nbsp;processing.</p>
+<pre><code>def handleEvents(self):
+    &quot;&quot;&quot;Poll for PyGame events and behave accordingly. Return false to stop
+    the event loop and end the level builder.&quot;&quot;&quot;
+
+    # poll for pygame events
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            return False
+
+        # handle user input
+        elif event.type == KEYDOWN:
+
+            # if the user presses escape, quit the event loop.
+            if event.key == K_ESCAPE:
+                return False
+
+            # ctrl-s saves the level
+            elif event.key == K_s and event.mod <span class="amp">&amp;</span> KMOD_CTRL:
+                self.save()
+
+        # handle mouse clicks in self.mouseDown
+        elif event.type == <span class="caps">MOUSEBUTTONDOWN</span>:
+            self.mouseDown(event.pos, event.button)
+
+    return True
+</code></pre><h3 id="levelbuilder-mousedown">LevelBuilder.mouseDown</h3>
+<p>This is the bulk of the level editor functionality. First, we check if the user
+clicked the save button and call the save function. Next, we filter out any
+clicks that aren’t in our level area because we don’t care about those. Then we
+figure out what Block the click was over and call Block.up for left clicks and
+Block.down for right clicks. We also have some code to remove Blocks with level
+0 from the render group. Note: we wouldn’t need this extra code if we had gone
+with the alternative transparent level 0 image discussed&nbsp;above.</p>
+<pre><code>def mouseDown(self, position, button):
+    &quot;&quot;&quot;Handles all the mouse clicks. We want left clicks
+    to add to a block or create one and right clicks to take away.&quot;&quot;&quot;
+    posx, posy = position
+
+    # check if the save button was clicked
+    if self.savebutton.rect.collidepoint( position):
+        self.save()
+        return
+
+    # otherwise, only care about clicks in the level area
+    if posx &lt; 10 or posx &gt;= 510 or posy &lt; 0 or posy &gt;= 110:
+        return
+
+    # convert mouse position to block coordinate
+    x = int((posx-10) / 50)     # subtract 10 for the wall and divide by block width
+    y = int((posy-10) / 20)     # subtract 10 for the wall and divide by block height
+
+    # get the block we are on
+    block = self.level[y][x]    # notice y then x because our level is rows then cols
+
+    # Left click
+    if button == 1:
+        # if the block in this space is level 0, increment and add for render
+        if block.level == 0:
+
+            # increment block level
+            block.up()
+
+            # add to rendering group so it gets displayed
+            self.blocks.add(block)
+
+        # on a block with level less than 6
+        elif block.level &lt; 6:
+            # increment block level
+            block.up()
+
+        # on a block with level &gt; 6
+        else:
+            # loop back to an empty block
+            block.level = 0
+
+            # remove from rendering group
+            self.blocks.remove(block)
+
+    # right click
+    elif button == 3:
+        # if the block in this space is greater than 1
+        if block.level &gt; 1:
+            # decrement block level
+            block.down()
+
+        # on a block with level &lt; 1
+        else:
+            # change back to an empty block
+            block.level = 0
+
+            # remove from rendering group
+            self.blocks.remove(block)
+</code></pre><h3 id="levelbuilder-save">LevelBuilder.save</h3>
+<p>The last thing we need to do in the LevelBuilder class is the save method. We
+first generate the ‘next’ level name by starting at level1.level and
+incrementing the number until there is not already a file with that name. Then
+we create the file and write the level of each block in each row, separated by
+spaces. Finally, we call resetLevel to clear out all the Blocks and give the
+user a clean slate to work&nbsp;from.</p>
+<pre><code>def save(self):
+    self.feedback.setText(&#39;Saving...&#39;)
+
+    # generate unique level name
+    count = 1
+    name = &#39;level%d.level&#39;%count
+    while os.path.isfile( os.path.join(&#39;levels&#39;, name) ):
+        count += 1
+        name = &#39;level%d.level&#39;%count
+
+    # create file
+    f = open(os.path.join(&#39;levels&#39;,name), &#39;w&#39;)
+
+    # generate contents from self.level
+    for row in self.level:
+        for col in row:
+            f.write(&#39;%d &#39; % col.level)    # write block level
+        f.write(&#39;\n&#39;)   # write new line
+
+    # close file handle
+    f.close()
+
+    # show level name in feedback
+    self.feedback.setText(&#39;Saved level to levels/%s&#39; % name)
+    print &#39;Saved levels/%s&#39; % name
+
+    # reset level
+    self.resetLevel()
+</code></pre><h3 id="the-end">The&nbsp;End</h3>
+<p>The very last thing is the couple lines of code at the end to create the
+LevelBuilder object and run it when the script is&nbsp;run.</p>
+<pre><code>if __name__ == &#39;__main__&#39;:
+    lb = LevelBuilder()
+    lb.run()
+</code></pre><h3 id="result">Result</h3>
+<p>Now we have a fully functional level builder! Use left and right clicks to
+add/subtract block levels and hit save to save. Couldn’t be more&nbsp;simple.</p>
+</section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>

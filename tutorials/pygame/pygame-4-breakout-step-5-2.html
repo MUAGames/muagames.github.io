@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Breakout - Step 5 - Part 2</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-4-screenshot6.jpg"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal-">Goal:</h3>
+<p>Now we are going to finish step 5 by adding a high score table. This requires us
+to hack up a lot of our existing code so you may want to use a diff program to
+look at the changes between step 5 and step 4 so you can tell what is actually
+going&nbsp;on.</p>
+<h3 id="namesprite">NameSprite</h3>
+<p>First of all we will create another text sprite just like the Score object. We
+are going to have two functions that make this look like ‘entering text’ -
+addLetter and removeLetter. All they do is change the string we are using and
+re-render the image so it can be displayed. We don’t need anything fancy, so
+this super simple implementation will work&nbsp;nicely.</p>
+<pre><code>class NameSprite(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A sprite for the play to enter their name&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        pygame.sprite.Sprite.__init__(self)
+        self.xy = xy
+        self.text = &#39;&#39;
+        self.color = (255, 0, 0)
+        self.font = pygame.font.Font(None, 35)  # load the default font, size 35
+        self.reRender() # generate the image
+
+    def addLetter(self, letter):
+        &quot;&quot;&quot;Adds the given letter&quot;&quot;&quot;
+        self.text += str(letter)
+        self.reRender()
+
+    def removeLetter(self):
+        if len(self.text) == 1:
+            self.text = &#39;&#39;
+        else:
+            self.text = self.text[:-1]
+        self.reRender()
+
+    def reRender(self):
+        &quot;&quot;&quot;Updates the text.&quot;&quot;&quot;
+        self.image = self.font.render(self.text, True, self.color)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.xy
+</code></pre><h3 id="game-__init__">Game.<strong>init</strong></h3>
+<p>When the game is over we want the player to enter their name if they set a high
+score, so we are going to add another ‘state’ of the game. We also need another
+render group for the name sprite and instruction&nbsp;text.</p>
+<pre><code>    self.enteringname = False
+
+    # sprite group for name block
+    self.namesprites = pygame.sprite.RenderUpdates()
+</code></pre><h3 id="game-run">Game.run</h3>
+<p>Now we are going to add another if block to our run method so we can render the
+name sprite if necessary. This isn’t the cleanest way to do things; normally I
+would set up a game this complicated with a more thorough game state system, but
+we didn’t need it until now so we are just going to make it&nbsp;work.</p>
+<pre><code>  # entering name, render name sprite
+  elif self.enteringname:
+      font = pygame.font.Font(None, 35)  # load the default font, size 50
+      color = (255, 50, 0)
+      nameimage = font.render(&#39;Enter Name:&#39;, True, color)
+      namerect = nameimage.get_rect()
+      namerect.center = 260, 250
+      self.window.blit(nameimage,namerect)
+
+      self.namesprites.clear(self.window, self.background)
+      dirty = self.namesprites.draw(self.window)
+      pygame.display.update(dirty+[namerect])
+</code></pre><h3 id="game-handleinput">Game.handleInput</h3>
+<p>Now we are going to hack up our input method. Again, this would be much cleaner
+with a game state system. We are going to change the key down block to send
+letters to the name sprite if we are entering name or do our normal paddle
+movement if not. All I did to make this work was create a big string with all
+the letters I wanted to allow then check the ascii equivalent for each key
+pressed. If it wasn’t on my list or threw an exception (not a renderable key), I
+just ignore it. Finally, I tweak the keyup if statement so it doesn’t do
+anything when we are entering the&nbsp;name.</p>
+<pre><code>      # if entering name, save keys
+      if self.enteringname:
+
+          # if backspace, remove last letter until empty string
+          if event.key == K_BACKSPACE:
+              self.namesprite.removeLetter()
+
+          # if enter, self.nameEntered with name
+          elif event.key == K_RETURN:
+              self.nameEntered()
+
+          else:
+              try:
+                  char = chr(event.key)
+                  # all the characters we want to allow
+                  if str(char) in &#39;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_&#39;:
+                      self.namesprite.addLetter(char)
+              except:
+                  pass    # exception from not being able to get char, dont care
+
+      # not entering name
+      else:
+          # paddle control
+          if event.key == K_a or event.key == K_LEFT:
+              self.paddle.left()
+          if event.key == K_d or event.key == K_RIGHT:
+              self.paddle.right()
+
+          # serve with space if the ball isn&#39;t moving
+          if event.key == K_SPACE:
+              if self.isReset:
+                  self.ball.serve()
+                  self.isReset = False
+
+  elif event.type == KEYUP and not self.enteringname:
+</code></pre><h3 id="game-newlevel">Game.newLevel</h3>
+<p>We are going to tweak our newLevel code. I’m going to move the message a bit and
+we need to display our&nbsp;highscores.</p>
+<pre><code>  endmessagerect.center = (260, 135)
+
+  # handle showing and inputing high scores
+  self.handleHighScores()
+</code></pre><h3 id="game-reset">Game.reset</h3>
+<p>Same as above - I’m moving the you lose message and calling our method to handle
+the high scores. Before we had a ‘Press Esc to Quit’ message, which I removed
+since we are going to display the high score table&nbsp;now.</p>
+<pre><code>  endmessagerect.center = (260, 135)
+
+  # show high score table
+  self.handleHighScores()
+</code></pre><h3 id="game-handlehighscores">Game.handleHighScores</h3>
+<p>This is the function we call at the end of the game, whether the player won or
+lost. It gets the current high score table and checks if the user needs to be on
+it. If so, we start the name entering process by creating the name sprite and
+setting the enteringname variable to enable all the changes we made above. If
+not, it just renders the high score&nbsp;table.</p>
+<pre><code>  def handleHighScores(self):
+      &quot;&quot;&quot;Called to prompt the user to enter a new
+      high score name and show the high score table.&quot;&quot;&quot;
+
+      # load high scores
+      highscores = self.parseHighScores()
+
+      # if current score belongs on the table
+      if self.score.score &gt; int(highscores[-1][1]):
+          # prompt for user name
+          self.enteringname = True
+          self.namesprite = NameSprite( (260, 310) )
+          self.namesprites.add(self.namesprite)
+
+      # otherwise just show table
+      else:
+          self.showHighScores(highscores)
+</code></pre><h3 id="game-nameentered">Game.nameEntered</h3>
+<p>This is called when the player presses enter while putting in their name. We
+draw a blank background to overwrite everything, put the player’s score into the
+high score table, save the table, and render the high score list. Notice how
+simple our high scores are – it is literally a text file of lines with a name
+and their score separated by a colon. This is super insecure but this is all
+local so we don’t really care if the player wants to ‘hack’ it and change their
+score to 999999999999 with a simple text&nbsp;editor.</p>
+<pre><code>  def nameEntered(self):
+      self.enteringname = False
+      username = self.namesprite.text
+
+      # blit the background onto the window
+      self.window.blit(self.background, (0,0))
+      # flip the display so the background is on there
+      pygame.display.flip()
+
+      # load high scores
+      highscores = self.parseHighScores()
+
+      # insert the player&#39;s score into the highscore table
+      newscores = []
+      for name, score in highscores:
+          if self.score.score &gt; int(score):
+              newscores.append((username, str(self.score.score)))
+              self.score.score = 0    # set to 0 so we dont add it again
+          newscores.append((name, score))
+      newscores = newscores[0:10] # only take 10
+
+      # write scores to high score table
+      highscorefile = &#39;highscores.txt&#39;
+      f = open(highscorefile, &#39;w&#39;)
+      for name, score in newscores:
+          f.write(&quot;%s:%s\n&quot; % (name, score))
+      f.close()
+
+      # display high scores
+      self.showHighScores(newscores)
+</code></pre><h3 id="game-parsehighscores">Game.parseHighScores</h3>
+<p>We have been calling this every time we need the list of high scores - now you
+get to see how it works. First of all we check if the high score file exists –
+if not we don’t want to throw an exception and crash the game, we just want to
+create a default list. If it <em>does</em> exist, we read the file and parse it. Either
+way, we return a list of the high scores with each entry being another list of
+the form [name,&nbsp;score].</p>
+<pre><code>    def parseHighScores(self):
+        &quot;&quot;&quot;Parses the high score table and returns a
+        list of scores and their owners&quot;&quot;&quot;
+        highscorefile = &#39;highscores.txt&#39;
+        if os.path.isfile(highscorefile):
+            # read the file into lines
+            f = open(highscorefile, &#39;r&#39;)
+            lines = f.readlines()
+            # break lines into length 2 lists [name, score]
+            scores = []
+            for line in lines:
+                scores.append( line.strip().split(&#39;:&#39;))
+            return scores
+        else:
+            # generate default highscore table
+            f = open(highscorefile, &#39;w&#39;)
+            f.write(&quot;&quot;&quot;JJJ:10000
+III:9000
+HHH:8000
+GGG:7000
+FFF:6000
+EEE:5000
+DDD:4000
+CCC:3000
+BBB:2000
+AAA:1000&quot;&quot;&quot;)
+            f.close()
+            # call method again - will load the scores we just wrote this time
+            return self.parseHighScores()
+</code></pre><h3 id="game-showhighscores">Game.showHighScores</h3>
+<p>This is our very last function. We take the list of scores created in the
+function above and render it on screen by looping through the scores and
+blitting text images on the window. To give it a slightly retro look I lined up
+the names on the left and the scores on the right, then drew dots to connect&nbsp;them.</p>
+<pre><code>def showHighScores(self, scores):
+    &quot;&quot;&quot;Draws the high score table onto the screen.&quot;&quot;&quot;
+    font = pygame.font.Font(None, 35)  # load the default font, size 50
+    color = (255, 50, 0)
+
+    for i in range(len(scores)):
+        name, score = scores[i]
+        # render name
+        nameimage = font.render(name, True, color)
+        namerect = nameimage.get_rect()
+        namerect.left, namerect.y = 40, 100 + (i*(namerect.height + 20))
+        self.window.blit(nameimage,namerect)
+
+        # render score
+        scoreimage = font.render(score, True, color)
+        scorerect = scoreimage.get_rect()
+        scorerect.right, scorerect.y = 480, namerect.y
+        self.window.blit(scoreimage, scorerect)
+
+        # draw dots from name until score
+        for d in range(namerect.right + 25, scorerect.left-10, 25):
+            pygame.draw.rect(self.window, color, pygame.Rect(d, scorerect.centery, 5, 5))
+
+    # flip display
+    pygame.display.flip()
+</code></pre></section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Breakout - Step 4</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-4-screenshot4.jpg"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal-">Goal:</h3>
+<p>This time we will be taking what we made in the previous tutorials and making it
+into an actual game. Before we could bounce the ball around and break blocks,
+but to be complete we need multiple levels, score keeping, and a way to
+win/lose. We made the level editor last time, so all we have to do to get
+levels is write a way to load them. We are going to add a score at the
+bottom and give the player a limited number of ‘lives’. If the player beats
+every level, we will tell them they win. If they don’t, they&nbsp;lose!</p>
+<h3 id="score-object">Score&nbsp;Object</h3>
+<p>The first thing we are going to add to our code from tutorial 2 is a sprite to
+show the score. This is extremely similar to the TextSprite from the level
+builder tutorial; we create an image of some text using pygame.font. There also
+a couple methods to make it easier to change the score and re-generate the&nbsp;image.</p>
+<pre><code>class Score(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A sprite for the score.&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        pygame.sprite.Sprite.__init__(self)
+        self.xy = xy    # save xy -- will center our rect on it when we change the score
+        self.font = pygame.font.Font(None, 50)  # load the default font, size 50
+        self.color = (255, 165, 0)         # our font color in rgb
+        self.score = 0  # start at zero
+        self.reRender() # generate the image
+
+    def update(self):
+        pass
+
+    def add(self, points):
+        &quot;&quot;&quot;Adds the given number of points to the score.&quot;&quot;&quot;
+        self.score += points
+        self.reRender()
+
+    def reset(self):
+        &quot;&quot;&quot;Resets the scores to zero.&quot;&quot;&quot;
+        self.score = 0
+        self.reRender()
+
+    def reRender(self):
+        &quot;&quot;&quot;Updates the score. Renders a new image and re-centers at the initial coordinates.&quot;&quot;&quot;
+        self.image = self.font.render(&quot;%d&quot;%(self.score), True, self.color)
+        self.rect = self.image.get_rect()
+        self.rect.center = self.xy
+</code></pre><h3 id="lives-object">Lives&nbsp;Object</h3>
+<p>Similar to the score object, we are going to create a Lives object to show how
+many lives the player has left. We are going to use the pygame Sprite class as
+usual, but generate our image by copying the ball image for however many lives
+are left. Every time we change how many lives remain we just regenerate the&nbsp;image.</p>
+<pre><code>class Lives(pygame.sprite.Sprite):
+    &quot;&quot;&quot;An object to represent the player&#39;s remaining lives.&quot;&quot;&quot;
+    def __init__(self, xy, startinglives=3):
+        pygame.sprite.Sprite.__init__(self)
+        self.xy = xy        # our rendering position
+        self.ballimage = pygame.image.load(os.path.join(&#39;images&#39;,&#39;ball.gif&#39;))  # path to the ball image
+        self.setLives(startinglives)        # sets lives and generates the lives image
+
+    def getLives(self):
+        return self.lives
+
+    def setLives(self, lives):
+        self.lives = lives
+        self.generateLivesImage()
+
+    def generateLivesImage(self):
+        &quot;&quot;&quot;Generates a new image for this sprite by repeating the ball image
+        for each life the player still has.&quot;&quot;&quot;
+        # get a new surface that is the width of the ball image * the lives
+        ballrect = self.ballimage.get_rect()
+        padding = 5
+        newwidth = (ballrect.width + padding) * self.lives
+
+        # create the surface
+        surface = pygame.Surface( (newwidth, ballrect.height) )
+        surface.set_colorkey((0,0,0))   # set the color key to black so we
+                                        # have a transparent background
+
+        # draw the ball on it repeatedly
+        for l in range(self.lives):
+            surface.blit(self.ballimage, ((ballrect.width + padding) * l, 0))
+
+        # set as image and rect so it can be rendered
+        self.image = surface
+        self.rect = surface.get_rect()
+
+        # move rect to the proper location
+        self.rect.left, self.rect.centery = self.xy
+</code></pre><h3 id="game-__init__-changes">Game.<strong>init</strong>&nbsp;Changes</h3>
+<p>We are going to change the end of our Game.<strong>init</strong> method. First of all we need
+a variable to track which level we are on since we have more than one now. We
+are also going to change the loadLevel method to accept the level to load. Next
+we need a variable to check if we are still playing - we will use this to stop
+the gameplay when the player has won or lost. Finally, we add our score and
+lives sprites and add them to the sprites render&nbsp;group.</p>
+<pre><code>    # load the first level
+    self.currentlevel = 1
+    self.loadLevel(self.currentlevel)
+
+    # track the state of the game
+    self.isReset = True
+    self.playing = True
+
+    # create our score object
+    self.score = Score((75, 575))
+    self.sprites.add(self.score)
+
+    # create our lives object
+    self.lives = Lives((450, 575), 3)
+    self.sprites.add(self.lives)
+</code></pre><h3 id="game-run">Game.run</h3>
+<p>Next we are going to make some changes to the run method. We aren’t replacing
+all of it, but I’m posting the entire run method here for clarity. We are going
+to move most of the gameplay (rendering, collisions, movement) into an if
+statement so it only happens if self.playing is True. Also, each frame we are
+going to check if the player beat the level (ie, all the blocks are gone) and
+change to the next level if&nbsp;necessary.</p>
+<pre><code>def run(self):
+    &quot;&quot;&quot;Runs the game. Contains the game loop that computes and renders
+    each frame.&quot;&quot;&quot;
+
+    print &#39;Starting Event Loop&#39;
+
+    running = True
+    # run until something tells us to stop
+    while running:
+
+        # tick pygame clock
+        # you can limit the fps by passing the desired frames per seccond to tick()
+        self.clock.tick(60)
+
+        # handle pygame events -- if user closes game, stop running
+        running = self.handleEvents()
+
+        # update the title bar with our frames per second
+        pygame.display.set_caption(&#39;Pygame Tutorial 4 - Breakout   %d fps&#39; % self.clock.get_fps())
+
+        # if we haven&#39;t lost yet
+        if self.playing:
+
+            # update our sprites
+            for sprite in self.sprites:
+                sprite.update()
+
+            # handle ball -- all our ball management here
+            self.manageBall()
+
+            # manageCollisions
+            self.manageCollisions()
+
+            # check if we beat the level
+            if len(self.blocks) == 0:
+                self.newLevel()
+
+            # render our sprites
+            self.sprites.clear(self.window, self.background)    # clears the window where the sprites currently are, using the background
+            dirty = self.sprites.draw(self.window)              # calculates the &#39;dirty&#39; rectangles that need to be redrawn
+
+            # render blocks
+            self.blocks.clear(self.window, self.background)
+            dirty += self.blocks.draw(self.window)
+
+            # blit the dirty areas of the screen
+            pygame.display.update(dirty)                        # updates just the &#39;dirty&#39; areas
+
+    print &#39;Quitting. Thanks for playing&#39;
+</code></pre><h3 id="game-managecollisions">Game.manageCollisions</h3>
+<p>Remember when we made the Block.hit method return both if the Block was still
+around and the score? Now we are going to use that by adding that returned score
+to our score object. We are only changing two lines here, but I’m posting the
+entire method so there is no confusing on where they&nbsp;go.</p>
+<pre><code>def manageCollisions(self):
+    &quot;&quot;&quot;Called every frame. Manages collisions between the ball and
+    the paddle and the ball and the blocks&quot;&quot;&quot;
+    # lets do the paddle and the ball first
+    if pygame.sprite.collide_rect(self.ball, self.paddle):
+        # need to get WHERE on the paddle the ball hit so we can apply
+        # the proper rebound
+        self.collisionHelper(self.ball, self.paddle)
+
+    # ball and blocks
+    collisions = pygame.sprite.spritecollide(self.ball, self.blocks, dokill=False)
+
+    # if we hit two blocks at once we need to bounce differently
+    if len(collisions) &gt;= 2:    # going to just take the first 2
+        # if between them horizontally, bounce like a flat horizontal wall
+        if collisions[0].rect.y == collisions[1].rect.y:
+            self.ball.vely *= -1            # bounce in y direction
+            self.ball.rect.top = collisions[0].rect.bottom + 1  # move out of collision
+
+        # if between them vertically, bounce like a flat vertical wall
+        else:
+            # we were moving right
+            if self.ball.velx &gt; 0:
+                self.ball.rect.right = collisions[0].rect.left - 1  # move out of collision
+            # we were moving left
+            else:
+                self.ball.rect.left = collisions[0].rect.right + 1  # move out of collision
+            # bounce x direction
+            self.ball.velx *= -1
+
+        # apply damage to blocks
+        for block in collisions:
+            destroyed, points = block.hit(self.ball.damage)
+            self.score.add(points)      # add the points to the score
+            if destroyed:
+                self.blocks.remove(block)
+
+    # if we hit one block, use the collisionHelper function
+    if len(collisions) == 1:
+        item = collisions[0]
+        self.collisionHelper(self.ball, item)
+        # collided with a block, call the block hit method
+        if hasattr(item, &#39;hit&#39;):
+            destroyed, points = item.hit(self.ball.damage)
+            self.score.add(points)      # add the points to the score
+            # remove from render group if block is destroyed
+            if destroyed:
+                self.blocks.remove(item)
+</code></pre><h3 id="game-newlevel">Game.newLevel</h3>
+<p>Now we are going to add a function to handle when the player beats the current
+level. First we check if there is another level available. If so, we load it and
+reset the paddle and ball. If not, the player has beaten every level we have, so
+we are going to create some text and put it on screen, then turn off the
+gameplay with our self.playing variable we put in our run method. Notice how
+easy this makes adding new levels – if we create new ones or take some away,
+the game will automatically handle the change without us having to edit
+anything in the&nbsp;code.</p>
+<pre><code>def newLevel(self):
+    &quot;&quot;&quot;Called when the user completes the level. Loads the next level
+    if possible and resets the paddle and ball. If no more levels are
+    available, shows the win message.&quot;&quot;&quot;
+    self.currentlevel += 1
+    # if there is a file for the next level, load it
+    if os.path.isfile(os.path.join(&#39;levels&#39;, &#39;level%d.level&#39;%self.currentlevel)):
+        self.loadLevel(self.currentlevel)
+        self.paddle.reset()
+        self.ball.reset()
+        self.isReset = True
+
+    # no file, show win message
+    else:
+        # game over! render a game over message and stop the game
+        font = pygame.font.Font(None, 50)  # load the default font, size 50
+        endmessage = font.render(&quot;You Win!&quot;, True, (255,150,80))
+        endmessagerect  = endmessage.get_rect()
+        endmessagerect.center = (260, 250)
+
+        # blit it on the background and flip (render) the display one last time
+        self.window.blit(endmessage, endmessagerect)
+        pygame.display.flip()
+
+        # turn off all the gameplay
+        self.playing = False
+</code></pre><h3 id="game-reset">Game.reset</h3>
+<p>Now we have to rewrite our reset method. Since we are keeping track of lives now
+we have to take away a life when the ball hits the bottom. If the player is out
+of lives, we are going to stop the gameplay and display a message just like in
+the newLevel&nbsp;method.</p>
+<pre><code>def reset(self):
+    &quot;&quot;&quot;Called when the ball hits the bottom wall. The player loses
+    a life and the ball is placed on the paddle, ready to be served.&quot;&quot;&quot;
+
+    # handle the lives
+    lives = self.lives.getLives()
+    # if we have lives to spare
+    if lives &gt; 0:
+        self.lives.setLives(lives-1)
+        self.paddle.reset()
+        self.ball.reset()
+        self.isReset = True
+    else:
+        # game over! render a game over message and stop the game
+        font = pygame.font.Font(None, 50)  # load the default font, size 50
+        endmessage = font.render(&quot;Game Over!&quot;, True, (255,100,50))
+        endmessagerect  = endmessage.get_rect()
+        endmessagerect.center = (260, 250)
+
+        font = pygame.font.Font(None, 40)  # load the default font, size 40
+        endmessage2 = font.render(&quot;Press Escape to Quit&quot;, True, (255,100,50))
+        endmessagerect2  = endmessage2.get_rect()
+        endmessagerect2.center = (260, endmessagerect.bottom + 20)
+
+        # blit it on the background and flip (render) the display one last time
+        self.window.blit(endmessage, endmessagerect)
+        self.window.blit(endmessage2, endmessagerect2)
+        pygame.display.flip()
+
+        # turn off all the gameplay
+        self.playing = False
+</code></pre><h3 id="game-parselevelfile">Game.parseLevelFile</h3>
+<p>Since we have multiple levels now we need a way to load them from the files we
+create with the level editor into the game. This method takes the path to the
+next level file, reads it into an array, converts the strings to integers, and
+returns the array as the new level. I also added a bit of code to return the
+default level we made in the previous tutorials in case we don’t find the level
+we are looking for. This also stops the game from crashing if we don’t have any
+levels when the game&nbsp;starts.</p>
+<pre><code>def parseLevelFile(self, filepath):
+    &quot;&quot;&quot;Parses a level file and returns a 2D array representing it.
+    If it fails to find the level it returns a default level&quot;&quot;&quot;
+    defaultlevel = [
+        [0, 1, 1, 2, 1, 1, 2, 1, 1, 0],
+        [0, 0, 2, 3, 4, 4, 3, 2, 0, 0],
+        [0, 0, 0, 4, 5, 5, 4, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ]
+
+    # verify the file exists
+    if os.path.isfile(filepath):
+        # open it for reading
+        f = open(filepath, &#39;r&#39;)
+        # read all the lines from it into an array
+        rows = f.readlines()
+
+        level = []
+        # for all the rows in the array we read from the file
+        for r in rows:
+            # strip any /n from the row, then split on spaces so we get
+            # an array of our block levels
+            blocks = r.strip().split(&#39; &#39;)
+            newrow = []
+            # convert our strings to integers and place in the row
+            for b in blocks:
+                newrow.append(int(b))
+            level.append(newrow)
+
+        # return the level
+        return level
+
+    else:
+        return defaultlevel
+</code></pre><h3 id="game-loadlevel">Game.loadLevel</h3>
+<p>The last thing we need to do is change the loadLevel method to accept the
+levelnumber to load as a parameter and to get the level from the parseLevelFile
+method instead of just using the default one we created&nbsp;before.</p>
+<pre><code>def loadLevel(self, levelnumber):
+    &quot;&quot;&quot;Loads a level. Places blocks on the board and adds them to the
+    blocks render group&quot;&quot;&quot;
+    # parse the desired level file
+    level = self.parseLevelFile( os.path.join(&#39;levels&#39;, &#39;level%d.level&#39; % levelnumber))
+
+    # levels are a 2d array with 5 rows and 10 columns
+    # each space represents a block
+    for i in range(5):              # for every row
+        for j in range(10):         # for every column
+            if level[i][j] != 0:    # if the space isnt empty
+                blocklevel = level[i][j]    # get the level of the block
+                x = 35 + (50*j) # x = 10 (for the wall) + 25 (to center of first block)
+                                # + 50 (width of a block) * j (number of blocks over we are)
+                y = 20 + (20*i) # y = 10 (for the wall ) + 10 (to center of first block)
+                                # + 20 (height of a block) * i (number of blocks down)
+
+                # if greater than 0 and less than 6, ie not a gray block
+                if blocklevel &gt; 0 and blocklevel &lt; 6:
+                    # create a block and add it
+                    self.blocks.add(self.blockfactory.getBlock((x,y), blocklevel))
+
+                # if block level == 6, solid block
+                elif blocklevel == 6:
+                    # create solid block and add it
+                    self.blocks.add(self.blockfactory.getSolidBlock((x,y)))
+</code></pre><h3 id="result">Result</h3>
+<p>Now we have a game! We added multiple levels, keeping score, and ways to win and
+lose. Go make some levels of your own in the level editor and you can actually
+have some&nbsp;fun.</p>
+</section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>

@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr" class="index">
+  <head>
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta content="text/html;charset=UTF-8" http-equiv="Content-Type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link href="/favicon.ico" rel="icon" type="image/x-icon">
+    <title>MUA Games
+    </title>
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+    <!--if lt IE 9-->
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <link href="/css/article.css" rel="stylesheet">
+  </head>
+  <body></body>
+</html>
+<div id="page-wrap">
+  <div class="pi-navigation1">
+    <div class="container">
+      <div id="topnav" class="topnav section">
+        <div id="PageList1" class="widget PageList">
+          <h2>Pages</h2>
+          <div class="widget-content navlist">
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header id="header" class="header">
+    <div class="container">
+      <div class="logo text-center">
+        <div id="header" class="header section">
+          <div id="Header1" class="widget Header">
+            <div id="header-inner"><a href="http://localhost:8080"><img id="Header1_headerimg" alt="MUA Games" src="/images/logo.png"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <nav data-menu-responsive="992" class="pi-navigation">
+    <div class="container">
+      <div class="open-menu"><span class="item item-1"></span><span class="item item-2"></span><span class="item item-3"></span></div>
+      <div class="close-menu"></div>
+      <ul class="navlist">
+        <li><a href="http://localhost:8080">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/tutorials.html">Tutorials</a>
+          <ul class="sub-menu">
+            <li><a href="/tutorials/pygame.html">PyGame</a>
+              <ul class="sub-menu">
+                <li><a href="/tutorials/pygame/pygame-1-the-plan.html">01 - The Plan</a></li>
+                <li><a href="/tutorials/pygame/pygame-2-the-basics.html">02 - The Basics</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-1.html">03 - Pong - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-2.html">03 - Pong - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-3-pong-step-3.html">03 - Pong - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-1.html">04 - Breakout - Step 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-2.html">04 - Breakout - Step 2</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-3.html">04 - Breakout - Step 3</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-4.html">04 - Breakout - Step 4</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-1.html">04 - Breakout - Step 5 - Part 1</a></li>
+                <li><a href="/tutorials/pygame/pygame-4-breakout-step-5-2.html">04 - Breakout - Step 5 - Part 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/games.html">Games</a>
+          <ul class="sub-menu">
+            <li><a href="/games/thelist.html">TheList</a></li>
+          </ul>
+        </li>
+        <li><a href="mailto:contact@muagames.com">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="clear"></div>
+  <article class="blog-content blog-grid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="content article-content">
+            <div id="main" class="main section">
+              <div id="Blog1" class="widget Blog">
+                <div class="post-inner">
+                  <div class="post hentry">
+                    <h3 class="post-title entry-title">Breakout - Step 2</h3>
+                    <div id="post-body" class="entry-content">
+                      <div dir="ltr" style="text-align: left;" trbidi="on">
+                        <div dir="ltr" style="text-align: left;" trbidi="on">
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div>
+                          <div style="clear: both; text-align: center;" class="separator"></div><br>
+                          <div style="clear: both; text-align: center;" class="separator"><img src="/tutorials/pygame/pygame-4-screenshot2.jpg"></div><br>
+                        </div><br>
+                      </div>
+                      <section class="content"><h3 id="goal-">Goal:</h3>
+<p>In this tutorial we are going to take our basic setup from step 1 and add the
+crux of the gameplay: collisions. At the end we should be able to serve the ball
+and have it bounce around, taking out blocks and rebounding as expected from the
+paddle, the walls, and the&nbsp;blocks.</p>
+<h3 id="the-ball">The&nbsp;Ball</h3>
+<p>First we are going to create the ball. I copied the ball from the pong tutorial
+then changed it a bit. I moved the movement code from last tutorial into the
+ball via the update and move functions. In the update function, we use some trig
+to cap the ball speed so it doesn’t get too out of hand. I also changed the
+serve function to send the ball vertically instead of&nbsp;horizontal.</p>
+<pre><code>class Ball(pygame.sprite.Sprite):
+    &quot;&quot;&quot;A ball sprite. Subclasses the pygame sprite class.&quot;&quot;&quot;
+
+    def __init__(self, xy):
+        pygame.sprite.Sprite.__init__(self)
+        # set the image and rect for rendering
+        self.image = pygame.image.load(os.path.join(&#39;images&#39;,&#39;ball.gif&#39;))
+        self.rect = self.image.get_rect()
+        self.rect.centerx, self.rect.centery = xy
+
+        # keep track of some info about the ball
+        self.maxspeed = 10
+        self.servespeed = 5
+        self.damage = 1
+
+        # the ball velocity
+        self.velx = 0
+        self.vely = 0
+
+    def move(self, dx, dy):
+        &quot;&quot;&quot;Move the ball&quot;&quot;&quot;
+        self.rect.x += dx
+        self.rect.y += dy
+
+    def update(self):
+        &quot;&quot;&quot;Called to update the sprite. Do this every frame. Handles
+        moving the sprite by its velocity. Caps the speed as necessary.&quot;&quot;&quot;
+        speed = math.hypot(self.velx, self.vely)
+        # if going faster than max speed
+        if speed &gt; self.maxspeed:
+            speed = self.maxspeed                       # cap speed
+            angle = math.atan2(self.vely, self.velx)    # get angle
+            self.velx = math.cos(angle) * speed         # x component at new speed
+            self.vely = math.sin(angle) * speed         # y component at new speed
+
+        # move the ball
+        self.move(self.velx, self.vely)
+
+    def reset(self):
+        &quot;&quot;&quot;Put the ball back in the middle and stop it from moving&quot;&quot;&quot;
+        self.rect.centerx = 260
+        self.rect.bottom = 549   # place just above the paddle so we dont collide
+        self.velx = 0
+        self.vely = 0
+
+    def serve(self):
+        angle = -90 + random.randint(-30, 30)
+
+        # do the trig to get the x and y components
+        x = math.cos(math.radians(angle))
+        y = math.sin(math.radians(angle))
+
+        self.velx = self.servespeed * x
+        self.vely = self.servespeed * y
+</code></pre><h3 id="block-hit">Block.hit</h3>
+<p>Next we are going to add the hit function to our block class. We are going to
+call this function when the ball collides with a block so we need to both
+decrement the block level (and update the image accordingly) and return if the
+block is still around so we can delete it if necessary. We also return any
+points we earned for hitting the block, but we won’t use that until&nbsp;later.</p>
+<pre><code>  def hit(self, damage=1):
+      &quot;&quot;&quot;Called when the block gets hit. Damage is the amount
+      of levels to drop the block down from one hit -- perhaps for
+      powerups or something later on.
+      Returns a tuple (destroyed, points)
+      destroyed is true if the block is destroyed, False otherwise
+      points is the number of points gained by hitting the block&quot;&quot;&quot;
+      # points earned for hitting the block
+      points = 100 * self.level
+
+      # decrement the block level
+      self.level -= damage
+
+      # check if destroyed
+      if self.level &lt;= 0:
+          return True, points
+
+      # not destroyed, set new image
+      else:
+          self.image = self.images[self.level]
+          xy = self.rect.center               # save previous position
+          self.rect = self.image.get_rect()   # reset rect in case shape changes
+          self.rect.center = xy               # reset block to old position
+          return False, points
+</code></pre><h3 id="solidblock-hit">SolidBlock.hit</h3>
+<p>Mirrors the Block.hit function, but since SolidBlocks can’t be destroyed it just
+returns False (not destroyed), 0 (no points&nbsp;earned)</p>
+<pre><code>def hit(self, damage):
+    &quot;&quot;&quot;Returns false, 0 since it cannot be destroyed&quot;&quot;&quot;
+    return False, 0
+</code></pre><h3 id="game-__init__-changes">Game.<strong>init</strong>&nbsp;Changes</h3>
+<p>Now that we have a Ball class we need to add it to the game. Make the following
+changes to the Game.<strong>init</strong> method to add the ball (and render it via the
+sprites group) and a variable to track when the ball is waiting on the
+paddle, ready to be&nbsp;served.</p>
+<pre><code># create ball
+self.ball = Ball((0,0))
+self.ball.reset()
+self.sprites.add(self.ball)
+
+# track the state of the game
+self.isReset = True
+</code></pre><h3 id="game-run">Game.run</h3>
+<p>New we need to add two functions to our Game.run method so they get called every&nbsp;frame.</p>
+<pre><code># handle ball -- all our ball management here
+self.manageBall()
+
+# manageCollisions
+self.manageCollisions()
+</code></pre><h3 id="game-handleevents">Game.handleEvents</h3>
+<p>This is the last of our trivial changes. In step 1 we made a spot for handling
+the pressing of the space bar, but we left it blank. Now we are going to fill
+that in so that if we are waiting to serve the ball (self.isReset is True) and
+the spacebar is pressed we serve it and set self.isReset to False so subsequent
+spacebar presses do nothing until the ball is reset&nbsp;again.</p>
+<pre><code>if self.isReset:
+    self.ball.serve()
+    self.isReset = False
+</code></pre><h3 id="game-manageball">Game.manageBall</h3>
+<p>We are adding the manageBall function to the Game object that we called in the run function above. This is going to handle keeping the ball inside the play area (by faking collisions with the ‘walls’) and keep the ball on the paddle if we are waiting to serve. This is very similar to the pong tutorial code, so check that out if this confuses you. Notice that the walls in our background image only go down 550 pixels, so if the ball is below that we don’t bounce it&nbsp;horizontally.</p>
+<pre><code>def manageBall(self):
+    &quot;&quot;&quot;This basically runs the game. Moves the ball and handles
+    wall and paddle collisions.&quot;&quot;&quot;
+
+    # if isReset is true, we are waiting to serve the ball so keep it on the paddle
+    if self.isReset:
+        self.ball.rect.centerx = self.paddle.rect.centerx
+        return
+
+    # if ball isn&#39;t below the walls
+    if self.ball.rect.top &lt; 550:
+        # bounce ball off the ceiling
+        if self.ball.rect.top &lt;= 10:
+            self.ball.rect.top = 11
+
+            # reverse y velocity so it &#39;bounces&#39;
+            self.ball.vely *= -1
+
+        # bounce ball off the left wall
+        if self.ball.rect.left &lt;= 10:
+            self.ball.rect.left = 11
+
+            # reverse X velocity so it &#39;bounces&#39;
+            self.ball.velx *= -1
+
+        # bounce ball off the right wall
+        elif self.ball.rect.right &gt; 510:
+            self.ball.rect.right = 509
+
+            # reverse X velocity so it &#39;bounces&#39;
+            self.ball.velx *= -1
+
+    # ball IS below the walls
+    else:
+        # if ball hits the bottom, reset the board
+        if self.ball.rect.bottom &gt; 600:
+            self.reset()
+</code></pre><h3 id="game-managecollisions">Game.manageCollisions</h3>
+<p>This is the first of the actually interesting code for this tutorial. This is the first of two functions we are going to use for handling the collisions between the ball and the blocks and the ball and the paddle. We check if the ball hits two blocks at once (by hitting directly between them) and handle that here by calling each Block’s hit method and bouncing the ball as if it hit a flat wall instead of 2 Block corners. If the ball hits a single block or the paddle, we use the next function we will define, collisionHelper, to decide in which direction we want to reflect the&nbsp;ball.</p>
+<pre><code>def manageCollisions(self):
+    &quot;&quot;&quot;Called every frame. Manages collisions between the ball and
+    the paddle and the ball and the blocks&quot;&quot;&quot;
+    # lets do the paddle and the ball first
+    if pygame.sprite.collide_rect(self.ball, self.paddle):
+        # need to get WHERE on the paddle the ball hit so we can apply
+        # the proper rebound
+        self.collisionHelper(self.ball, self.paddle)
+
+    # ball and blocks
+    collisions = pygame.sprite.spritecollide(self.ball, self.blocks, dokill=False)
+
+    # if we hit two blocks at once we need to bounce differently
+    if len(collisions) &gt;= 2:    # going to just take the first 2
+        # if between them horizontally, bounce like a flat horizontal wall
+        if collisions[0].rect.y == collisions[1].rect.y:
+            self.ball.vely *= -1            # bounce in y direction
+            self.ball.rect.top = collisions[0].rect.bottom + 1  # move out of collision
+
+        # if between them vertically, bounce like a flat vertical wall
+        else:
+            # we were moving right
+            if self.ball.velx &gt; 0:
+                self.ball.rect.right = collisions[0].rect.left - 1  # move out of collision
+            # we were moving left
+            else:
+                self.ball.rect.left = collisions[0].rect.right + 1  # move out of collision
+            # bounce x direction
+            self.ball.velx *= -1
+
+        # apply damage to blocks
+        for block in collisions:
+            destroyed, points = block.hit(self.ball.damage)
+            if destroyed:
+                self.blocks.remove(block)
+
+    # if we hit one block, use the collisionHelper function
+    if len(collisions) == 1:
+        item = collisions[0]
+        self.collisionHelper(self.ball, item)
+        # collided with a block, call the block hit method
+        if hasattr(item, &#39;hit&#39;):
+            destroyed, score = item.hit(self.ball.damage)
+            # remove from render group if block is destroyed
+            if destroyed:
+                self.blocks.remove(item)
+</code></pre><h3 id="game-collisionhelper">Game.collisionHelper</h3>
+<p>This is the meat of the step 2 tutorial. In Breakout, we want the ball to act semi-realistically when it collides with the blocks and the paddle. When it hits a flat face like the top/bottom or the sides, we want it to reflect normally, but when it hits a corner we want it to shoot off the corner back in the direction from which it came. We aren’t going to do any fancy physics library worthy code here – instead when we find a collision between the Ball and a Block we are going to call this function which then tests first if the ball is in the corners then, if not, tests if the ball hit one of the sides. It is fairly accurate and good enough for our simple game at this framerate. However, this type of system won’t work if the ball starts moving fast enough – consider if the ball is traveling to the right and is directly to the left of a block in one frame but is going so fast that in the next frame it is all the way on the right side of the block. With our simple algorithm here, we would find it on the right and therefore think it hit on the right side and handle it totally incorrectly (move it outside the block [i]to the right[/i] and reverse its x velocity, causing it to immediately hit the block again from the right and almost certainly causing exactly the same problem in a loop). If that doesn’t make sense, ignore it :) but if it does, beware of shortcuts like this and the benefits versus the potential costs and inaccuracies. Look through the function and refer to it as we go into more detail. First of all, we are going to impart 1/3 of the paddle velocity on the ball, just like in pong, to simulate a bit of ‘spin’ and give the game more variety. You may want to try taking this out to see the effect just this one line of code has on how fun it is to play. Next we test the corners. A lot happens in the first line of each block – first we build a pygame.Rect object to represent the corner we are in: in the top-left case we build it from the top left corner (duh) with a height and width of cornerwidth, a variable set a couple lines before to easily adjust how big the corners are. If we hit this box, we treat it like the ball hit the corner, so we want to reflect it with exactly its current speed, but at a 45 degree angle out from the block. Note that it is possible that we just barely clip the top left corner as we come down and left - in this case reflecting up at 45 degrees would feel totally wrong so we add a couple if statements to only adjust the velocity if it is coming at the corner directly – if it hits the top left from the right or from the bottom, we just skip over it like we didn’t hit it at all. The other corners are all the same, with the Rects and angles adjusted to match their corner. If we don’t hit any corners, we test the sides. We treat the top and the bottom the same way as the corners - since they are wide we create a rect for them and see if the Ball is in them. The left and right are very small though, so to save a tiny amount of processor power we just test if the ball contains the center of that side. You may want to check out the pygame docs if these functions look&nbsp;confusing.</p>
+<pre><code>def collisionHelper(self, ball, item):
+    &quot;&quot;&quot;Function that takes the ball and an item it collides with
+    and sets the new ball velocity and position based on how the
+    two collided. Does a fairly cheap but also fairly inaccurate
+    guess on how the ball collided with the object:)&quot;&quot;&quot;
+
+    # going to simulate actual collision code my checking if the ball is in
+    # certain areas of the block/paddle
+    cornerwidth = 5
+
+    # if the item is the paddle, apply some of its velocity to the ball
+    if hasattr(item, &#39;velocity&#39;):
+        self.ball.velx += item.velocity/3.0
+
+    # test corners first
+    # if the ball hit the top left
+    if self.ball.rect.colliderect( pygame.Rect(item.rect.left, item.rect.top, cornerwidth, cornerwidth) ):
+        speed = math.hypot(self.ball.velx, self.ball.vely)
+        component = speed * .7071 # sqrt2 estimate -- x and y component of 45 degrees
+        if self.ball.velx &gt;= 0: # only change x velocity if going right
+            self.ball.velx = -component
+        if self.ball.vely &gt;= 0: # only change y velocity if going down
+            self.ball.vely = -component
+        self.ball.rect.bottom = item.rect.top -1    # move out of collision
+        return
+
+    # if the ball hit the top right
+    if self.ball.rect.colliderect( pygame.Rect(item.rect.right, item.rect.top, cornerwidth, cornerwidth) ):
+        speed = math.hypot(self.ball.velx, self.ball.vely)
+        component = speed * .7071 # sqrt2 estimate -- x and y component of 45 degrees
+        if self.ball.velx &lt;= 0: # only change x velocity if going left
+            self.ball.velx = component
+        if self.ball.vely &gt;= 0: # only change y velocity if going down
+            self.ball.vely = -component
+        self.ball.rect.bottom = item.rect.top -1    # move out of collision
+        return
+
+    # if the ball hit the bottom left
+    if self.ball.rect.colliderect( pygame.Rect(item.rect.left, item.rect.bottom-cornerwidth, cornerwidth, cornerwidth) ):
+        speed = math.hypot(self.ball.velx, self.ball.vely)
+        component = speed * .7071 # sqrt2 estimate -- x and y component of 45 degrees
+        if self.ball.velx &gt;= 0: # only change x velocity if going right
+            self.ball.velx = -component
+        if self.ball.vely &lt;= 0: # only change y velocity if going up
+            self.ball.vely = component
+        self.ball.rect.top  = item.rect.bottom + 1  # move out of collision
+        return
+
+    # if the ball hit the bottom right
+    if self.ball.rect.colliderect( pygame.Rect(item.rect.left, item.rect.bottom-cornerwidth, cornerwidth, cornerwidth) ):
+        speed = math.hypot(self.ball.velx, self.ball.vely)
+        component = speed * .7071 # sqrt2 estimate -- x and y component of 45 degrees
+        if self.ball.velx &lt;= 0: # only change x velocity if going left
+            self.ball.velx = component
+        if self.ball.vely &lt;= 0: # only change y velocity if going up
+            self.ball.vely = component
+        self.ball.rect.top = item.rect.bottom + 1   # move out of collision
+        return
+
+    # didnt hit the corners, let&#39;s try the sides
+    # if the ball hit the top edge
+    if self.ball.rect.colliderect( pygame.Rect(item.rect.left, item.rect.top, item.rect.width, 2) ):
+        self.ball.vely *= -1                        # flip y velocity
+        self.ball.rect.bottom = item.rect.top - 1   # move out of collision
+        return
+
+    # if the ball hit the bottom edge
+    elif self.ball.rect.colliderect( pygame.Rect(item.rect.left, item.rect.bottom-2, item.rect.width, 2) ):
+        self.ball.vely *= -1                        # flip y velocity
+        self.ball.rect.top = item.rect.bottom + 1   # move out of collision
+        return
+
+    # if the ball hit the left side
+    if self.ball.rect.collidepoint((item.rect.left, item.rect.centery)):
+        self.ball.velx *= -1                        # flip x velocity
+        self.ball.rect.right = item.rect.left - 1   # move out of collision
+        return
+
+    # if the ball hit the right side
+    elif self.ball.rect.collidepoint((item.rect.right, item.rect.centery)):
+        self.ball.velx *= -1                        # flip x velocity
+        self.ball.rect.left = item.rect.right + 1   # move out of collision
+        return
+</code></pre><h3 id="game-reset">Game.reset</h3>
+<p>The last thing we need is the reset function we called above when the ball goes off the bottom of the board (in other words, the player missed it). All this does is call our Ball and Paddle reset functions (placing them back in the center) and set self.isReset which makes our Ball stay on the Paddle and let’s the user serve it with the spacebar. In a later step of this tutorial this will also be the place where we decrement the user’s lives and, if they have none left, show some sort of ‘Game Over’&nbsp;feedback.</p>
+<pre><code>def reset(self):
+    &quot;&quot;&quot;Called when the ball hits the bottom wall. The player loses
+    a life and the ball is placed on the paddle, ready to be served.&quot;&quot;&quot;
+    self.paddle.reset()
+    self.ball.reset()
+    self.isReset = True
+
+    # todo: decrement player lives here
+</code></pre></section>
+                      <div style="clear: both;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div id="sidebar" class="sidebar section">
+            <div id="HTML3" class="widget HTML">
+              <h2 class="title"><span>Featured Game</span></h2>
+              <div class="widget-content"><a href="/games/thelist.html"><img src="/games/thelist/wide-promo-simple.png"/></a></div>
+              <div class="clear"></div>
+            </div>
+            <div id="PopularPosts1" class="widget PopularPosts">
+              <h2><span>Featured Posts</span></h2>
+              <div class="widget-content popular-posts">
+                <ul>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <li>
+                    <div class="item-thumbnail-only">
+                      <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                      <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                    </div>
+                    <div style="clear: both;"></div>
+                  </li>
+                  <div class="clear"></div>
+                </ul>
+              </div>
+            </div>
+            <div id="Label2" class="widget Label">
+              <h2><span>Article Tags</span></h2>
+              <div class="widget-content list-label-widget-content">
+                <ul>
+                  <li><a dir="ltr" href="/tags.html#tag_opinion">opinion</a><span dir="ltr">(1)</span></li>
+                </ul>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <footer id="footer" class="footer"></footer>
+  <div class="container">
+    <div class="row">
+      <!-- WIDGET NEWSLETTER-->
+      <div class="col-md-4">
+        <div id="footer1" class="footer-section section">
+          <div id="PopularPosts2" class="widget PopularPosts">
+            <h2>Featured Posts</h2>
+            <div class="widget-content popular-posts">
+              <ul>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/new-site/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/new-site/field.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/new-site/">New Site</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+                <li>
+                  <div class="item-thumbnail-only">
+                    <div class="item-thumbnail"><a href="/articles/games-as-art/" target="_blank"><img alt="" border="0" height="72" width="72" src="/articles/games-as-art/pencils.jpg"/></a></div>
+                    <div class="item-title"><a href="/articles/games-as-art/">Games as Art</a></div>
+                  </div>
+                  <div style="clear: both;"></div>
+                </li>
+              </ul>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET NEWSLETTER-->
+      <!-- WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer2" class="footer-section section">
+          <div id="Label5" class="widget Label">
+            <h2>Tags</h2>
+            <div class="widget-content cloud-label-widget-content"><span id="tag_[object Object]" class="label-size label-size-5"><a dir="ltr" href="/tags.html#tag_opinion">opinion</a></span>
+              <div class="clear"></div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <!-- END / WIDGET META-->
+      <div class="col-md-4">
+        <div id="footer3" class="footer-section section">
+          <div id="BlogArchive1" class="widget BlogArchive">
+            <h2>Archive</h2>
+            <div class="widget-content">
+              <div id="ArchiveList">
+                <div id="BlogArchive1_ArchiveList">
+                  <ul class="flat">
+                    <li class="archivedate"><a href="/archive.html#archive-2015-10"><span class="year">2015</span><span class="month">  Oct</span> (1)</a></li>
+                    <li class="archivedate"><a href="/archive.html#archive-2010-4"><span class="year">2010</span><span class="month">  Apr</span> (1)</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="clear"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END / WIDGET ARCHIVES-->
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="copyright text-center">
+    <div class="container">
+      <div class="footer-left">Copyright © 2015<a href="http://localhost:8080">MUA Games</a></div>
+    </div>
+    <div class="totop">
+      <div class="totop-inner"><i class="fa fa-angle-up"></i></div>
+    </div>
+  </div>
+  <!-- END / FOOTER-->
+  <!-- LOAD JQUERY-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js" type="text/javascript"></script>
+  <script src="/vendor/masonry/masonry.js" type="text/javascript"></script>
+  <link href="/vendor/fancybox/jquery.fancybox.css" rel="stylesheet"/>
+  <script src="/vendor/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <link href="/vendor/owlcarousel/owl.carousel.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.theme.css" rel="stylesheet"/>
+  <link href="/vendor/owlcarousel/owl.transitions.css" rel="stylesheet"/>
+  <script src="/vendor/owlcarousel/owl.carousel.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+  <link href="/vendor/highlight/monokai.css" rel="stylesheet"/>
+  <script type="text/javascript" class="java">
+    $(document).ready(function() {
+    
+      var featuredArticleCount = 2
+    
+      $(window).scroll(function() {
+        $(this).scrollTop() ? $(".totop").fadeIn() : $(".totop").fadeOut()
+      });
+    
+      $(".totop").click(function() {
+        $("html,body").animate({
+          scrollTop: 0
+        }, 500)
+      });
+    
+      $(".blog-grid .post-wrapper").masonry({
+        columnWidth: ".grid-item",
+        itemSelector: ".grid-item"
+      });
+    
+      $(".fancybox").fancybox();
+    
+      $('.featured-slider').owlCarousel({
+        items : 4,
+        slideSpeed: 300,
+        navigation: !0,
+        pagination: !1,
+        items: 2,
+        loop: true,
+        itemsCustom: [
+          [0, Math.min(featuredArticleCount, 1)],
+          [500, Math.min(featuredArticleCount, 2)],
+          [992, Math.min(featuredArticleCount, 3)],
+          [1200, Math.min(featuredArticleCount, 3)],
+          [1400, Math.min(featuredArticleCount, 4)]
+        ],
+      });
+    
+      hljs.initHighlightingOnLoad()
+    
+    });
+  </script>
+</div>
